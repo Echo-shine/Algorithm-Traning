@@ -80,6 +80,12 @@ public class DivideAndConquer {
 		System.out.println("请输入硬币总的个数：");
 		Scanner input=new Scanner(System.in);
 		n=input.nextInt();
+		System.out.println("请输入硬币的真假：");
+		for(i=0;i<n;i++){
+			coin[i]=input.nextInt();
+		}
+		location=FalseCoin(coin,0,n-1);
+		System.out.println("在上述"+MAXNUM+"个硬币中，第"+location+"个硬币是假的");
 	}
 
 }
